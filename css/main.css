@@ -1,0 +1,399 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, label {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+.all{
+	height: 100vh;
+}
+header{
+	background: rgb(0,151,255);
+	background: linear-gradient(0deg, rgba(0,151,255,1) 31%, rgba(111,222,245,1) 71%);;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+.wrapper-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+.logo{
+    margin-bottom: 20px;
+}
+
+.offer-title{
+	font-size: 30px;
+	font-weight: 700px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+.offer-span{
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	letter-spacing: 2px;
+}
+
+.offer-text{
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+.offer-link{
+	display: block;
+	width: 220px;
+	height: 50px;
+	background-color: rgb(255, 221, 0);
+	font-weight: bold;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.offer-link:hover {
+    background-color: #d4ac0d;
+	transform: scale(1.1);
+}
+
+.header-img{
+	width: 400px;
+	padding-left: 160px;
+}
+
+.features{
+	background-color: white;
+	text-align: center;
+	padding: 50px;
+	padding: 100px;
+}
+.feature-box{
+	display: flex;
+	justify-content: space-between;
+}
+
+.features h2{
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+.block {
+    width: 30%;
+    text-align: center;
+}
+
+.block img:hover{
+	transform: rotate(360deg);
+}
+
+.block img{
+	margin-bottom: 20px;
+	transition-duration: 3s;
+}
+.block h3{
+	font-size: 15px;
+}
+
+.block p{
+	font-size: 15px;
+	color: #6c757d;
+}
+
+.form-box2{
+    text-align: center;
+    background: rgb(18,154,224);
+    background: linear-gradient(177deg, rgba(18,154,224,1) 33%, rgba(59,188,244,1) 54%, rgba(111,222,245,1) 79%);
+}
+
+.form-box2 h2{
+    font-size: 28px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.error-message p{
+    font-size: 10px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.order-form {
+    display: inline-block;
+    text-align: left;
+}
+
+.order-form input {
+    width: 300px;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-form button {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: #3f74d6;
+    color: black;
+    border: none;
+    cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.order-form button:hover {
+    background-color: #2455dd;
+	transform: scale(1.1);
+}
+
+.form-box1 {
+    background-color: #eaf2f8;
+    padding-top: 50px;
+	padding-bottom: 60px;
+    text-align: center;
+}
+
+.form-box1 h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.form {
+    display: inline-block;
+    text-align: left;
+}
+
+.form input {
+    width: 300px;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form input:invalid {
+    border-color: red;
+}
+
+.form button {
+    width: 300px;
+    padding: 10px;
+    background-color: #f1c40f;
+    color: black;
+    border: none;
+    cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #d4ac0d;
+	transform: scale(1.1);
+}
+
+
+.footer {
+    background: rgb(0,151,255);
+	background: linear-gradient(177deg, rgba(0,151,255,1) 47%, rgba(73,198,248,1) 71%, rgba(111,222,245,1) 79%);
+    color: white;
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@keyframes slideIn {
+	0% {
+	  opacity: 0;
+	  transform: translateX(-100%);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  
+  @keyframes scaleUp {
+	0% {
+	  transform: scale(0.8);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+  
+  .offer {
+	animation: slideIn 2s ease-out;
+  }
+  
+  .header-img {
+	animation: scaleUp 2s ease-out;
+  }
+
+  
+  @media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+
+    .header-img {
+        width: 400px;
+    }
+    .offer-title {
+        font-size: 30px;
+    }
+    .offer-text {
+        font-size: 16px;
+    }
+}
+  
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .container {
+        width: 90%;
+    }
+    .offer{
+        margin:0 фге
+    }
+
+    .wrapper-inner {
+        flex-direction: column;
+    }
+
+    .header-img {
+        width: 300px;
+        padding: 0;
+        padding-top: 30px;
+    }
+
+    .offer-img{
+        margin: 0 auto;
+    }
+
+    .offer-title {
+        font-size: 26px; 
+    }
+
+    .offer-text {
+        font-size: 20px;
+    }
+
+    .features h2 {
+        font-size: 28px; 
+    }
+
+    .block {
+        width: 30%; 
+    }
+
+}
+
+
+/* Стили для экранов 768px - 991px (мобильные устройства) */
+@media (max-width: 991px) and (min-width: 768px) 
+{
+    .container {
+        width: 90%;
+    }
+
+    .wrapper-inner {
+        flex-direction: column;
+    }
+
+    .header-img {
+        width: 300px;
+        padding: 0;
+        padding-top: 30px;
+    }
+    
+    .offer-img{
+        margin: 0 auto;
+    }
+
+    .offer-link{
+        width: 100%;
+    }
+
+    .offer-title {
+        font-size: 30px; 
+    }
+
+    .offer-text {
+        font-size: 25px;
+    }
+
+    .feature-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features h2{
+        font-size: 35px;
+    }
+
+    .block {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .block h3{
+        font-size: 20px;
+    }
+
+    .block p{
+        font-size: 20px;
+    }
+
+    .form-box h2{
+        font-size: 35px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form input {
+        width: 100%; 
+    }
+
+    form button {
+        width: 100%; 
+    }
+
+    .footer{
+        padding: 10px;
+    }
+}
+

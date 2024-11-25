@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <div class="all">
+        
+        <header class="header">
+            <div class="container">
+                <div class="wrapper-inner">
+                    <div class="offer ">
+                        <img class="logo animate__animated animate__zoomInDown" src="img/logo.png" alt="logo">
+                        <h1 class="offer-title">С помощью нас 
+                        вы сможете создать то, о чем</h1>
+                        <span class="offer-span">желаете!</span>
+                        <p class="offer-text">
+                        Наши возможности+опыт позволят вам достичь
+                        огромного успеха. Мы верим в вас и знаем это на
+                        все 100%. Вас не остановить!
+                        </p>
+                        <a class="offer-link" href="#">Узнать больше...</a>
+                    </div>
+                    <div class="offer-img">
+                        <img class="header-img" src="img/header-img.png" alt="pict">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="features">
+            <div class="container">
+                <h2>Что Вам необходимо?</h2>
+                <div class="feature-box">
+                    <div class="block">
+                        <img src="img/f3.png" alt="icon1">
+                        <h3>Первый блок</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                    <div class="block">
+                        <img src="img/f4.png" alt="icon2">
+                        <h3>Второй блок</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                    <div class="block">
+                        <img src="img/f5.png" alt="icon3">
+                        <h3>Третий блок</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-box2">
+            <div class="container">
+                <h2>Форма заказа пробного продукта</h2>
+                <div style="display: flex;">
+                    <form class="order-form" id="orderForm" style="flex: 1;">
+                        <input type="text" id="productName" placeholder="Название продукта">
+                        <p class="error-message" id="productNameError"></p>
+
+                        <input type="number" id="productQuantity" placeholder="Количество" min="1">
+                        <p class="error-message" id="productQuantityError"></p>
+
+                        <input type="email" id="customerEmail" placeholder="Ваш Email">
+                        <p class="error-message" id="customerEmailError"></p>
+
+                        <input type="tel" id="customerPhone" placeholder="Ваш телефон">
+                        <p class="error-message" id="customerPhoneError"></p>
+
+                        <input type="text" id="deliveryAddress" placeholder="Адрес доставки">
+                        <p class="error-message" id="deliveryAddressError"></p>
+
+                        <label for="deliveryDate">Дата доставки:</label>
+                        <input type="date" id="deliveryDate">
+                        <p class="error-message" id="deliveryDateError"></p>
+
+                        <label for="deliveryTime">Время доставки:</label>
+                        <input type="time" id="deliveryTime">
+                        <p class="error-message" id="deliveryTimeError"></p>
+
+                        <button type="button" id="submitButton">Отправить заявку</button>
+                    </form>
+                    <div id="resultContainer" style="flex: 1; padding-left: 10px;"></div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="js/file.js"></script>
+
+        <div class="form-box1">
+            <div class="container">
+                <h2>Форма заказа обратного звонка</h2>
+                <form class="form animate__animated animate__backInLeft">
+                    <input type="text" placeholder="Имя" required minlength="2" maxlength="16">
+
+                    <input type="email" placeholder="Ваша почта Email" required>
+
+                    <input type="tel" placeholder="Телефон" required min="1" max="11" pattern="\d+">
+
+                    <input type="text" placeholder="Какая тема Вас интересует?" minlength="1" maxlength="50">
+
+                    <button type="submit">Отправить вопрос!</button>
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p>© Все права на этом сайте защищены</p>
+            </div>
+        </footer>
+    </div>
+       
+</body>
+</html>
